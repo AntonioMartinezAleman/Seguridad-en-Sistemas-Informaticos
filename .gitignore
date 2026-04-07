@@ -1,0 +1,15 @@
+# Binarios compilados
+a.out
+*.o
+vigenere
+chacha20
+practica
+diffie_hellman
+aes
+aesCBC
+
+# macOS
+.DS_Store
+
+# Configuración local
+.claude/
