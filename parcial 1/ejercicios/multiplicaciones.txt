@@ -1,7 +1,0 @@
-En AES 10111101 x 00100101 es: 
-La respuesta correcta es: 00110101
-
-Realiza la operación multiplicación de los bytes 11010101 y 01010001 para el cifrado usado en 3G, 4G y 5G.
-10101101
-
-3. Calcula el resultado de la operación en AES 11011011 x 01001001
