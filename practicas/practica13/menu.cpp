@@ -45,7 +45,17 @@ void ImprimirMenu() {
 int Ejecutar(const Entrada& e) {
   std::string cmd;
   if (e.python) {
-    cmd = "cd " + std::string(e.dir) + " && python3 " + e.fuente;
+    std::printf("  1. Sin atacante\n  2. Con atacante\n  3. Modificacion\n");
+    std::printf("Elige variante: ");
+    std::fflush(stdout);
+    int v;
+    if (std::scanf("%d", &v) != 1) return 1;
+    int c;
+    while ((c = std::getchar()) != '\n' && c != EOF) {}
+    const char* script = "bb84_sin_atacante.py";
+    if (v == 2) script = "bb84_con_atacante.py";
+    else if (v == 3) script = "bb84_modificacion.py";
+    cmd = "cd " + std::string(e.dir) + " && python3 " + script;
   } else {
     cmd = "cd " + std::string(e.dir) +
           " && (test -x " + e.binario + " || clang++ -std=c++17 -O2 " +
