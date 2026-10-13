@@ -1,15 +1,41 @@
-# Binarios compilados
-a.out
+# macOS
+.DS_Store
+
+# Editores / IDE
+.vscode/
+.idea/
+.claude/
+
+# Compilación C/C++
 *.o
+*.out
+a.out
+*.exe
+build/
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Verilog (simulación)
+*.vvp
+
+# Comprimidos de entrega
+*.tgz
+*.tar.gz
+*.zip
+
+# Ejecutables de las prácticas
 vigenere
 chacha20
 practica
 diffie_hellman
 aes
 aesCBC
-
-# macOS
-.DS_Store
-
-# Configuración local
-.claude/
+vernam
+rsa
+eliptica
+firma_rsa
+menu
+diffie_hellman_modi
